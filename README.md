@@ -6,9 +6,9 @@ No other scripts are needed (eg. zone.js)
 
 The current size is:
 ```
--rw-r--r--  1 alexeagle  eng  120236 Dec 16 16:20 dist/bundle.js
--rw-------  1 alexeagle  eng   31768 Dec 16 16:20 dist/bundle.js.brotli
--rw-r--r--  1 alexeagle  eng   36585 Dec 16 16:20 dist/bundle.js.gz
+-rw-r--r--  1 jan  staff  112602 Dec 18 16:24 dist/bundle.js
+-rw-------  1 jan  staff   30406 Dec 18 16:24 dist/bundle.js.brotli
+-rw-r--r--  1 jan  staff   34304 Dec 18 16:24 dist/bundle.js.gz
 ```
 
 At NgConf'16 we announced a 21.6k bundle, but this did not include zone.js.
