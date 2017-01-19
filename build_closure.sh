@@ -15,7 +15,8 @@ OPTS=(
   "--js_module_root=vendor"
 
   # Uncomment for easier debugging
-  # "--formatting=PRETTY_PRINT"
+  "--formatting=PRETTY_PRINT"
+  "--debug"
 
   # Include zone.js as externs rather than the source code.
   # Allows us to use --dependency_mode=STRICT below.
@@ -23,14 +24,17 @@ OPTS=(
   # See index.html
   #node_modules/zone.js/dist/zone.js
   "vendor/zone_externs.js"
+  "vendor/angular_externs.js"
 
   $(find vendor/rxjs -name *.js)
-  node_modules/@angular/{core,common,compiler,platform-browser}/index.js
-  $(find node_modules/@angular/{core,common,compiler,platform-browser}/src -name *.js)
-  "built/*.js"
+  node_modules/@angular/core/index.js
+  #$(find node_modules/@angular/{core,common,compiler,platform-browser}/src -name *.js)
+  $(find node_modules/@angular/core/src -name *.js)
+  #"built/*.js"
 
   # Trim files not imported (transitively) from bootstrap.js
-  "--entry_point=./built/bootstrap"
+  #"--entry_point=./built/bootstrap"
+  '--entry_point=node_modules/@angular/core/index.js'
   "--dependency_mode=STRICT"
   "--output_manifest=dist/manifest.MF"
 )
