@@ -52,11 +52,15 @@ closureFlags=$(mktemp)
 echo ${OPTS[*]} > $closureFlags
 java $JVM_ARGS -jar node_modules/google-closure-compiler/compiler.jar --flagfile $closureFlags
 
+echo "Bundle sizes:" >bundle_sizes.txt
+
 # measure the sizes of scripts the user will need to load
 for script in dist/bundle.js node_modules/zone.js/dist/zone.min.js; do
   gzip --keep -f $script
   # requires brotli
   # on Mac: brew install brotli
   bro --force --quality 10 --input $script --output $script.brotli
-  ls -alH ${script}*
+  ls -alH ${script}* >>bundle_sizes.txt
 done
+
+cp node_modules/zone.js/dist/zone.min.js dist
