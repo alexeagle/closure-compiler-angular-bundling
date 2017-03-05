@@ -1,8 +1,8 @@
 Bundle sizes:
--rw-r--r--+ 1 kcordes  staff  105260 Mar  5 10:11 dist/bundle.js
--rw-------+ 1 kcordes  staff   29509 Mar  5 10:11 dist/bundle.js.brotli
--rw-r--r--+ 1 kcordes  staff   33244 Mar  5 10:11 dist/bundle.js.gz
--rw-r--r--+ 1 kcordes  staff  292228 Mar  5 10:11 dist/bundle.js.map
+-rw-r--r--+ 1 kcordes  staff   99503 Mar  5 12:56 dist/bundle.js
+-rw-------+ 1 kcordes  staff   29017 Mar  5 12:56 dist/bundle.js.brotli
+-rw-r--r--+ 1 kcordes  staff   32670 Mar  5 12:56 dist/bundle.js.gz
+-rw-r--r--+ 1 kcordes  staff  275682 Mar  5 12:56 dist/bundle.js.map
 -rw-r--r--+ 1 kcordes  staff  26265 Feb 17 12:21 node_modules/zone.js/dist/zone.min.js
--rw-------+ 1 kcordes  staff   7922 Mar  5 10:11 node_modules/zone.js/dist/zone.min.js.brotli
+-rw-------+ 1 kcordes  staff   7922 Mar  5 12:56 node_modules/zone.js/dist/zone.min.js.brotli
 -rw-r--r--+ 1 kcordes  staff   8621 Feb 17 12:21 node_modules/zone.js/dist/zone.min.js.gz
