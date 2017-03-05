@@ -1283,6 +1283,12 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
+"rxjs-src@git+https://github.com/ReactiveX/rxjs.git#5.1.1":
+  version "5.1.1"
+  resolved "git+https://github.com/ReactiveX/rxjs.git#996bf6d8ae8bedc6ca4ed9daf2c3d6e0244bfbcd"
+  dependencies:
+    symbol-observable "^1.0.1"
+
 rxjs@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.1.1.tgz#fc48922965bc6c5efbcc0fe46e90a3af64137a7b"

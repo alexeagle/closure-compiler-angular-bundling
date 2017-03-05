@@ -1,5 +1,5 @@
 {
-  "extends": "./rxjs/tsconfig",
+  "extends": "../node_modules/rxjs-src/tsconfig",
 
   "compilerOptions": {
     "outDir": "built/rxjs",
