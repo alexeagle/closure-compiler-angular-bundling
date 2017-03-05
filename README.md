@@ -5,14 +5,14 @@ It contains a minimal Hello World application with a single component.
 
 ```
 ++ ls -alH dist/bundle.js dist/bundle.js.brotli dist/bundle.js.gz dist/bundle.js.map
--rw-r--r--  1 alexeagle  eng   77541 Jan 17 14:19 dist/bundle.js
--rw-r--r--  1 alexeagle  eng   21379 Jan 17 14:19 dist/bundle.js.brotli
--rw-r--r--  1 alexeagle  eng   24512 Jan 17 14:19 dist/bundle.js.gz
--rw-r--r--  1 alexeagle  eng  214850 Jan 17 14:19 dist/bundle.js.map
+-rw-r--r--+ 1 kcordes  staff  105260 Mar  5 10:01 dist/bundle.js
+-rw-r--r--+ 1 kcordes  staff   29509 Mar  5 10:01 dist/bundle.js.brotli
+-rw-r--r--+ 1 kcordes  staff   33244 Mar  5 10:01 dist/bundle.js.gz
+-rw-r--r--+ 1 kcordes  staff  292228 Mar  5 10:01 dist/bundle.js.map
 ++ ls -alH node_modules/zone.js/dist/zone.min.js node_modules/zone.js/dist/zone.min.js.brotli node_modules/zone.js/dist/zone.min.js.gz
--rw-r--r--  1 alexeagle  eng  24490 Jan 12 18:12 node_modules/zone.js/dist/zone.min.js
--rw-------  1 alexeagle  eng   7270 Jan 17 14:19 node_modules/zone.js/dist/zone.min.js.brotli
--rw-r--r--  1 alexeagle  eng   8114 Jan 12 18:12 node_modules/zone.js/dist/zone.min.js.gz
+-rw-r--r--+ 1 kcordes  staff  26265 Feb 17 12:21 node_modules/zone.js/dist/zone.min.js
+-rw-------+ 1 kcordes  staff   7922 Mar  5 10:01 node_modules/zone.js/dist/zone.min.js.brotli
+-rw-r--r--+ 1 kcordes  staff   8621 Feb 17 12:21 node_modules/zone.js/dist/zone.min.js.gz
 ```
 
 See https://github.com/angular/angular/issues/8550 for more context.
@@ -45,7 +45,7 @@ The above measurement uses an ES6 build of RxJS. See `vendor/tsconfig.rxjs-es6.j
 repo. However, RxJS has no such public distro.
 
 Another option is to build RxJS as ES5+esm. See `vendor/tsconfig.rxjs-es5+esm.json` in this
-repo, and change the `postinstall` line in package.json to switch.
+repo, and change the `build` line in package.json to switch.
 
 Yet another option is to build with ES6 and `@angular/tsc-wrapped` which does some extra
 closure output using the tsickle package.
