@@ -45,7 +45,7 @@ The above measurement uses an ES6 build of RxJS. See `vendor/tsconfig.rxjs-es6.j
 repo. However, RxJS has no such public distro.
 
 Another option is to build RxJS as ES5+esm. See `vendor/tsconfig.rxjs-es5+esm.json` in this
-repo, and change the `postinstall` line in package.json to switch.
+repo, and change the `build` line in package.json to switch.
 
 Yet another option is to build with ES6 and `@angular/tsc-wrapped` which does some extra
 closure output using the tsickle package.
