@@ -2,40 +2,40 @@
 # yarn lockfile v1
 
 
-"@angular/common@angular/common-builds":
-  version "4.0.0-beta.8-3c9a46c"
-  resolved "https://codeload.github.com/angular/common-builds/tar.gz/763eed3636a703b7401dce5094b9868b65c3bb5d"
+"@angular/common@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.0-rc.2.tgz#69f68639270d71b2e8c552e4fa939975fcb88304"
 
-"@angular/compiler-cli@angular/compiler-cli-builds":
-  version "4.0.0-beta.8-3c9a46c"
-  resolved "https://codeload.github.com/angular/compiler-cli-builds/tar.gz/6db7e3e244d1d2ef959df1b3c42c4bea2f52c3eb"
+"@angular/compiler-cli@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.0.0-rc.2.tgz#49730cb232d48aba25d68541eb9166bf5330dd2b"
   dependencies:
-    "@angular/tsc-wrapped" "4.0.0-beta.8"
+    "@angular/tsc-wrapped" "4.0.0-rc.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@angular/compiler-builds":
-  version "4.0.0-beta.8-3c9a46c"
-  resolved "https://codeload.github.com/angular/compiler-builds/tar.gz/ee63edce0da0fd33c880ed4546bb83971a95db98"
+"@angular/compiler@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.0.0-rc.2.tgz#643e199e6792413f42cf149a9cf1672284787c11"
 
-"@angular/core@angular/core-builds":
-  version "4.0.0-beta.8-3c9a46c"
-  resolved "https://codeload.github.com/angular/core-builds/tar.gz/106557f64eb92303b8543d12c7e929087141f3fd"
+"@angular/core@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.0-rc.2.tgz#59535050e5d0e6141417186eee571296f8e9c3d0"
 
-"@angular/platform-browser@angular/platform-browser-builds":
-  version "4.0.0-beta.8-3c9a46c"
-  resolved "https://codeload.github.com/angular/platform-browser-builds/tar.gz/107294d5b715b360f8c1e7566dc0ce860c17e8ee"
+"@angular/platform-browser@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.0.0-rc.2.tgz#bcca05ce85d320ee0b257640f15479b59fed20f0"
 
-"@angular/platform-server@angular/platform-server-builds":
-  version "4.0.0-beta.8-3c9a46c"
-  resolved "https://codeload.github.com/angular/platform-server-builds/tar.gz/c2f9e4348ed00f1a7c0993342e594cf842e44037"
+"@angular/platform-server@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-4.0.0-rc.2.tgz#3b09f4e2f2dc1b7d723fbbdc6b99117019c0f9de"
   dependencies:
     parse5 "^3.0.1"
     xhr2 "^0.1.4"
 
-"@angular/tsc-wrapped@4.0.0-beta.8", "@angular/tsc-wrapped@angular/tsc-wrapped-builds":
-  version "4.0.0-beta.8"
-  resolved "https://codeload.github.com/angular/tsc-wrapped-builds/tar.gz/5b570994c38f6c1387cbf0f4a1ebfc7e53a00529"
+"@angular/tsc-wrapped@4.0.0-rc.2":
+  version "4.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.0.0-rc.2.tgz#d7023d93f4576b6f776ffc7175ff760e7e133705"
   dependencies:
     tsickle "^0.21.0"
 
@@ -137,9 +137,9 @@ get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
 
-google-closure-compiler@^20170124.0.0:
-  version "20170124.0.0"
-  resolved "https://registry.yarnpkg.com/google-closure-compiler/-/google-closure-compiler-20170124.0.0.tgz#7a0e855b9c30d91191c3b0f3f1b4dec8e6d5bce5"
+google-closure-compiler@^20170218.0.0:
+  version "20170218.0.0"
+  resolved "https://registry.yarnpkg.com/google-closure-compiler/-/google-closure-compiler-20170218.0.0.tgz#059c7f91cf1cb2c1a66b4c95f745f5efd0fb4ba4"
   dependencies:
     chalk "^1.0.0"
     vinyl "^1.2.0"
@@ -340,9 +340,9 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
-rxjs@5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.0.3.tgz#fc8bdf464ebf938812748e4196788f392fef9754"
+rxjs@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.1.1.tgz#fc48922965bc6c5efbcc0fe46e90a3af64137a7b"
   dependencies:
     symbol-observable "^1.0.1"
 
@@ -428,16 +428,7 @@ trim-newlines@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-1.0.0.tgz#5887966bb582a4503a41eb524f7d35011815a613"
 
-tsickle@^0.2.3:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.2.6.tgz#ad4abf92e74ebdf3fb5aa187ca85b02066fe1a1b"
-  dependencies:
-    minimist "^1.2.0"
-    mkdirp "^0.5.1"
-    source-map "^0.5.6"
-    source-map-support "^0.4.2"
-
-tsickle@^0.21.0:
+tsickle@^0.21.0, tsickle@^0.21.5:
   version "0.21.5"
   resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.21.5.tgz#341c1834b9d293c8cbffc295a86a1e46268ed22f"
   dependencies:
@@ -446,9 +437,9 @@ tsickle@^0.21.0:
     source-map "^0.5.6"
     source-map-support "^0.4.2"
 
-typescript@~2.1:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
+typescript@~2.2:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.1.tgz#4862b662b988a4c8ff691cc7969622d24db76ae9"
 
 underscore@^1.8.3:
   version "1.8.3"

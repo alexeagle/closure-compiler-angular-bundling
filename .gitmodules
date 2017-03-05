@@ -1,4 +1,4 @@
 [submodule "vendor/rxjs"]
 	path = vendor/rxjs
 	url = git@github.com:ReactiveX/rxjs.git
-	branch = 5.0.3
+	branch = 5.1.1
