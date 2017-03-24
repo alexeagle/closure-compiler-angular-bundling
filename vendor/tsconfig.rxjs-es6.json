@@ -1,7 +1,13 @@
 {
-  "extends": "./rxjs/tsconfig",
+  "extends": "../node_modules/rxjs/tsconfig.json",
 
   "compilerOptions": {
-    "outDir": "built/rxjs"
-  }
+    "rootDir": "../node_modules/rxjs/src",
+    "target": "es2015",
+    "outDir": "./rxjs"
+  },
+
+  "files": [
+    "../node_modules/rxjs/src/Rx.ts"
+  ]
 }

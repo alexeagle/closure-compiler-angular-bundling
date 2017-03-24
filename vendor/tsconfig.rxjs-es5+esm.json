@@ -1,9 +1,20 @@
 {
-  "extends": "./rxjs/tsconfig",
+  "extends": "../node_modules/rxjs/tsconfig.json",
 
   "compilerOptions": {
-    "outDir": "built/rxjs",
+    "outDir": "./rxjs",
     "target": "es5",
-    "module": "es2015"
-  }
+    "module": "es2015",
+    "lib": [
+       "es5",
+       "es2015.iterable",
+       "es2015.collection",
+       "es2015.promise",
+       "dom"
+     ]
+  },
+
+  "files": [
+    "../node_modules/rxjs/src/Rx.ts"
+  ]
 }
