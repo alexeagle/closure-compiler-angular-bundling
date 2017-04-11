@@ -29,7 +29,7 @@
     "build_rxjs_es5esm": "tsc -p vendor/tsconfig.rxjs-es5+esm.json",
     "build_rxjs_es6": "tsc -p vendor/tsconfig.rxjs-es6.json",
     "build_rxjs_tsickle": "node ./node_modules/@angular/tsc-wrapped/src/main -p vendor/tsconfig.rxjs-tsickle.json",
-    "postinstall": "yarn run build_rxjs_es6 && webdriver-manager update",
+    "postinstall": "webdriver-manager update",
     "build": "ngc -p src && yarn run closure && ./size_report.sh",
     "format:enforce": "clang-format --glob='{{src,test}/**/,}*.{js,ts}' -output-replacements-xml | grep -c offset | grep 0",
     "closure": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf",
