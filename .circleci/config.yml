@@ -1,20 +1,22 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ng
+    working_directory: ~/circulate
     docker:
-      # Built from ./Dockerfile
-      - image: alexeagle/ngcontainer
+      - image: refinedwiki/node-with-java
+      #- image: node:6.10.2-slim
+      #- image: openjdk:jre
+      #- image: selenium/standalone-chrome:3.1.0
     steps:
       - checkout
-
       - restore_cache:
           key: angularclosure-{{ .Branch }}-{{ checksum "yarn.lock" }}
-
+      - run: node --version
+      - run: yarn --version
+      - run: java -version
       - run: yarn
       - run: yarn run build
-      - run: xvfb-run -a yarn test
-
+      - run: yarn test
       - save_cache:
           key: angularclosure-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
