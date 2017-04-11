@@ -4,6 +4,7 @@ import 'moment';
 import {Component, Injectable} from '@angular/core';
 import * as moment_type from 'moment';
 declare var moment: typeof moment_type;
+import * as jsCookie from 'js-cookie';
 
 @Component({
   selector: 'basic',
@@ -13,6 +14,7 @@ declare var moment: typeof moment_type;
 export class Basic {
   ctxProp: string;
   constructor() {
-    this.ctxProp = `Happy ${moment().format('dddd')}`;
+    document.cookie = 'cookie=true';
+    this.ctxProp = jsCookie.get('cookie');
   }
 }
