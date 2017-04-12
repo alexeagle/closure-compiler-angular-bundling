@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  http-server:
+    # nodejs simple http server
+    image: redsadic/docker-http-server
+    # mount our built application at /public
+    volumes:
+      - ./:/public
+    # Expose the port so we can also hit the application
+    ports:
+      - "8080:8080"
+
+  selenium:
+    # A selenium hub with an included chrome browser
+    image: selenium/standalone-chrome:3.1.0
+    # Expose the port so protractor can connect
+    ports:
+      - "4444:4444"
+    # Allow this container to connect to the web server
+    links:
+      - http-server
