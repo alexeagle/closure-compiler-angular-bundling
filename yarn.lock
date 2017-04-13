@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@angular/animations@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-4.0.2.tgz#79f6a77d8b6e19b2d1fd9fa175f78143cd689727"
+
 "@angular/common@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.1.tgz#df488eada842b2d841ded750712292b18387b5b0"
@@ -21,6 +25,18 @@
 "@angular/core@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.1.tgz#0b110a001012076ea696460ccd922707bcdf51ba"
+
+"@angular/forms@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.0.2.tgz#9094f46983298681bbaf0dcc17dcf8f7be6f35a3"
+
+"@angular/http@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.0.2.tgz#8c61b9ff52748c5dcb52b57046829d34d66662ec"
+
+"@angular/material@^2.0.0-beta.3":
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.3.tgz#ec31dee61d7300ece28fee476852db236ded1e13"
 
 "@angular/platform-browser@^4.0.1":
   version "4.0.1"
@@ -594,6 +610,10 @@ mkdirp@^0.5.1:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.13.0.tgz#24162d99521e6d40f99ae6939e806d2139eaac52"
 
 ms@0.7.2:
   version "0.7.2"
