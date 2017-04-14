@@ -8,8 +8,9 @@ exports.config = {
       args: ['--no-sandbox']
     }
   },
-  directConnect: true,
-  baseUrl: 'http://localhost:8080/',
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+  //directConnect: true,
+  baseUrl: 'http://http-server:8080/',
   framework: 'jasmine',
   useAllAngular2AppRoots: true
 };

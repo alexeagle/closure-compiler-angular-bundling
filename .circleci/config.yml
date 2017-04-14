@@ -1,20 +1,28 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ng
+    working_directory: ~/circulate
     docker:
-      # Built from ./Dockerfile
-      - image: alexeagle/ngcontainer
+      - image: refinedwiki/node-with-java
     steps:
       - checkout
-
       - restore_cache:
           key: angularclosure-{{ .Branch }}-{{ checksum "yarn.lock" }}
-
+      - run: node --version
+      - run: yarn --version
+      - run: java -version
       - run: yarn
       - run: yarn run build
-      - run: xvfb-run -a yarn test
-
+      # TODO(alexeagle): add this in our primary container image
+      - run:
+          name: Install Docker Compose
+          command: |
+            set -x
+            curl -L https://github.com/docker/compose/releases/download/1.11.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+            chmod +x /usr/local/bin/docker-compose
+      - setup_remote_docker
+      - run: docker-compose up -d
+      - run: yarn test
       - save_cache:
           key: angularclosure-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:

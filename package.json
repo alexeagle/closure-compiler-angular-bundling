@@ -18,21 +18,19 @@
     "tsickle": "^0.2.3",
     "typescript": "~2.1",
     "zone.js": "^0.8.4",
-    "concurrently": "3.1.0",
-    "lite-server": "2.2.2"
+    "moment": "2.13.0"
   },
   "scripts": {
     "build_rxjs_es5esm": "tsc -p vendor/tsconfig.rxjs-es5+esm.json",
     "build_rxjs_es6": "tsc -p vendor/tsconfig.rxjs-es6.json",
     "build_rxjs_tsickle": "node ./node_modules/@angular/tsc-wrapped/src/main -p vendor/tsconfig.rxjs-tsickle.json",
-    "postinstall": "yarn run build_rxjs_es6 && webdriver-manager update",
+    "postinstall": "yarn run build_rxjs_es6",
     "build": "ngc -p src && yarn run closure && ./size_report.sh",
     "closure": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf",
     "closure-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf --debug --formatting PRETTY_PRINT",
-    "serve": "lite-server -c test/browser.config.json",
     "explore": "source-map-explorer dist/bundle.js dist/bundle.js.map",
     "pretest": "tsc -p test",
-    "test": "concurrently \"yarn run serve\" protractor --kill-others --success first"
+    "test": "protractor"
   },
   "author": "Alex Eagle <alexeagle@google.com> (https://angular.io/)",
   "license": "MIT"
