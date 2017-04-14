@@ -1,6 +1,9 @@
 
 import {Component, Injectable} from '@angular/core';
 
+import 'moment';
+declare var moment: any;
+
 @Component({
   selector: 'basic',
   templateUrl: './basic.ng.html',
@@ -8,5 +11,5 @@ import {Component, Injectable} from '@angular/core';
 @Injectable()
 export class Basic {
   ctxProp: string;
-  constructor() { this.ctxProp = 'Hello world!'; }
+  constructor() { this.ctxProp = `Happy ${moment().format('dddd')}`; }
 }
