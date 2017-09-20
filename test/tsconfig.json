@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "outDir": "../built/test",
-    "lib": ["es5", "es2015.promise"],
-    "types": ["jasmine"]
-  }
-}
